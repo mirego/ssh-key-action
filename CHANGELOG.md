@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.6.1] - 2023-10-13
+
+### Fixed
+
+* JSON parse error on exit, if `if_key_exists`=`fail` and key exists
+
+## [2.6.0] - 2023-10-11
+
+### Others
+
+* back up and restore files when exist (thanks [@bambeusz](https://github.com/bambeusz))
+* remove `macos-10.15` and `ubuntu-18.04` virtual environment
+
+## [2.5.1] - 2023-03-25
+
+### Hotfix
+
+* update github.com key: <https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key/> (thanks [@phlax](https://github.com/phlax))
+
 ## [2.5.0] - 2022-12-24
 
 ### Added
@@ -180,7 +199,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 * First release.
 
-[Unreleased]: https://github.com/shimataro/ssh-key-action/compare/v2.5.0...HEAD
+[Unreleased]: https://github.com/shimataro/ssh-key-action/compare/v2.6.1...HEAD
+[2.6.1]: https://github.com/shimataro/ssh-key-action/compare/v2.6.0...v2.6.1
+[2.6.0]: https://github.com/shimataro/ssh-key-action/compare/v2.5.1...v2.6.0
+[2.5.1]: https://github.com/shimataro/ssh-key-action/compare/v2.5.0...v2.5.1
 [2.5.0]: https://github.com/shimataro/ssh-key-action/compare/v2.4.0...v2.5.0
 [2.4.0]: https://github.com/shimataro/ssh-key-action/compare/v2.3.1...v2.4.0
 [2.3.1]: https://github.com/shimataro/ssh-key-action/compare/v2.3.0...v2.3.1
