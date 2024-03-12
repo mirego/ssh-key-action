@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.7.0] - 2024-02-11
+
+### Others
+
+* Update to Node.js v20 (thanks [@princemaple](https://github.com/princemaple))
+* drop old containers; Ubuntu 16.04, and CentOS 7
+
 ## [2.6.1] - 2023-10-13
 
 ### Fixed
@@ -199,7 +206,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 * First release.
 
-[Unreleased]: https://github.com/shimataro/ssh-key-action/compare/v2.6.1...HEAD
+[Unreleased]: https://github.com/shimataro/ssh-key-action/compare/v2.7.0...HEAD
+[2.7.0]: https://github.com/shimataro/ssh-key-action/compare/v2.6.1...v2.7.0
 [2.6.1]: https://github.com/shimataro/ssh-key-action/compare/v2.6.0...v2.6.1
 [2.6.0]: https://github.com/shimataro/ssh-key-action/compare/v2.5.1...v2.6.0
 [2.5.1]: https://github.com/shimataro/ssh-key-action/compare/v2.5.0...v2.5.1
