@@ -59,7 +59,7 @@ export function loadCreatedFileNames(): string[] {
  */
 export function getSshDirectory(): string {
     const sshPath = path.resolve(getHomeDirectory(), ".ssh");
-    
+
     if (fs.existsSync(sshPath)) {
         const stats = fs.statSync(sshPath);
         if (stats.isDirectory()) {
@@ -71,7 +71,7 @@ export function getSshDirectory(): string {
     } else {
         fs.mkdirSync(sshPath);
     }
-    
+
     return sshPath;
 }
 
