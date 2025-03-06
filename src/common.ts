@@ -55,10 +55,24 @@ export function loadCreatedFileNames(): string[] {
 
 /**
  * get SSH directory
- * @returns SSH directory name
+ * @returns resolved SSH directory path
  */
 export function getSshDirectory(): string {
-    return path.resolve(getHomeDirectory(), ".ssh");
+    const sshPath = path.resolve(getHomeDirectory(), ".ssh");
+    
+    if (fs.existsSync(sshPath)) {
+        const stats = fs.statSync(sshPath);
+        if (stats.isDirectory()) {
+            return sshPath;
+        } else if (stats.isFile()) {
+            fs.unlinkSync(sshPath);
+            fs.mkdirSync(sshPath);
+        }
+    } else {
+        fs.mkdirSync(sshPath);
+    }
+    
+    return sshPath;
 }
 
 /**
