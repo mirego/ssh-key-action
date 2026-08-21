@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.8.1] - 2026-03-22
+
+### Fixed
+
+* typo in REDME (thanks [@epistrephein](https://github.com/epistrephein))
+* v2.8.0 forgot to update the base (thanks [@MarnuLombard](https://github.com/MarnuLombard))
+
+## [2.8.0] - 2026-02-19
+
+### Others
+
+* Update to Node.js v24
+* add support: `windows-2025`, `macos-14`, `macos-15`, and `ubuntu-24.04`
+* drop support: `windows-2019`, `macos-11`, `macos-12`, and `ubuntu-20.04`
+* add container support: `alpine:3.21` - `alpine:3.23`, `centos:stream10`, and `ubuntu:24.04`
+* drop container support: `alpine:3.10` - `alpine:3.13`, `centos:stream8`, and `ubuntu:20.04`
+* Add workaround; "HOME is not defined" (refer to: [issue #184](https://github.com/shimataro/ssh-key-action/issues/184))
+
 ## [2.7.0] - 2024-02-11
 
 ### Others
@@ -206,7 +224,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 * First release.
 
-[Unreleased]: https://github.com/shimataro/ssh-key-action/compare/v2.7.0...HEAD
+[Unreleased]: https://github.com/shimataro/ssh-key-action/compare/v2.8.1...HEAD
+[2.8.1]: https://github.com/shimataro/ssh-key-action/compare/v2.8.0...v2.8.1
+[2.8.0]: https://github.com/shimataro/ssh-key-action/compare/v2.7.0...v2.8.0
 [2.7.0]: https://github.com/shimataro/ssh-key-action/compare/v2.6.1...v2.7.0
 [2.6.1]: https://github.com/shimataro/ssh-key-action/compare/v2.6.0...v2.6.1
 [2.6.0]: https://github.com/shimataro/ssh-key-action/compare/v2.5.1...v2.6.0
